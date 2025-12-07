@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS File Minifier</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Terser for JS minification -->
+  <script src="https://cdn.jsdelivr.net/npm/terser@5.19.2/dist/bundle.min.js"></script>
+</head>
+<body>
+
+  <h1>Drag & Drop JS Minifier</h1>
+
+  <div id="drop-zone">
+    <p>Drag & Drop your .js file here<br>or click to select</p>
+    <input type="file" id="fileInput" accept=".js" hidden>
+  </div>
+
+  <button id="minifyBtn" disabled>Minify & Download</button>
+
+  <pre id="status"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
